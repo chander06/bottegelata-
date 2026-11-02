@@ -1,0 +1,12 @@
+// Configurazione del Worker Cloudflare che pubblica il sito.
+// "name" deve essere IDENTICO al nome del Worker creato su Cloudflare:
+// il sito sarà su https://bottegelata.yuvraj-chander.workers.dev
+{
+  "name": "bottegelata",
+  "compatibility_date": "2026-11-02",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  }
+}
